@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="">
+
+      <div class="banner">
+
+        <nav class="p-4 flex list-none justify-between">
+          <div class="hidden sm:flex-col sm:w-5/12 sm:flex">
+            <p class="text-blue-900 text-2xl font-josefin font-bold">
+              Akmal Anvarov
+            </p>
+            <p class="font-josefin font-bold">Software Developer, NY, USA</p>
+          </div>
+          <div class="flex space-x-4 justify-between text-xl">
+            <li class="h-8 hover:bg-gradient-to-r from-blue-200 to-pink-200 font-bold text-blue-900 font-josefin">
+              <a class='mb-2 bg-white inline-block cursor-pointer' href="#aboutMe">
+                About Me
+              </a>
+            </li>
+            <li class="h-8 hover:bg-gradient-to-r from-blue-200 to-pink-200 font-bold text-blue-900 font-josefin">
+              <a class='mb-2 bg-white inline-block cursor-pointer' href="#projects">
+                Projects
+              </a>
+            </li>
+            <li class="h-8 hover:bg-gradient-to-r from-blue-200 to-pink-200 font-bold text-blue-900 font-josefin">
+              <a class='mb-2 bg-white inline-block cursor-pointer' href="#skills">
+                Skills
+              </a>
+            </li>
+            <li class="h-8 hover:bg-gradient-to-r from-blue-200 to-pink-200 font-bold text-blue-900 font-josefin">
+              <a class='mb-2 bg-white inline-block cursor-pointer' href="#contact">
+                Contact
+              </a>
+            </li>
+          </div>
+        </nav>
+
+        <section
+          id="aboutMe"
+          class="p-4 flex justify-around"
+        >
+
+            
+            <div class="flex flex-col justify-center space-y-4 flex-shrink-0">
+              <div class='bg-gradient-to-tr from-blue-200 to-pink-200 p-2 rounded-full' id='img'>
+                <img
+                  class="rounded-full shadow-lg w-48 bg-white"
+                  src="/dist/bio.jpg"
+                  alt="Akmal"
+                />
+              </div>
+              <ol class="flex space-x-4 justify-center">
+                <li>
+                  <a href='https://linkedin.com/in/anvarov' target="_blank">
+                    <i class="hover:text-blue-600 hover:scale-105 transform text-2xl fab fa-linkedin cursor-pointer"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href='https://github.com/anvarov' target="_blank">
+                    <i class="hover:text-gray-500 hover:scale-105 transform text-2xl fab fa-github cursor-pointer"></i>
+                  </a>
+                </li>
+                <!-- <li>
+                  <i class="hover:text-gray-500 hover:scale-105 transform text-2xl fab fa-angellist cursor-pointer"></i>
+                </li> -->
+                <li>
+                  <a href='https://facebook.com/aanvrv' target="_blank">
+                    <i class="hover:text-blue-600 hover:scale-105 transform text-2xl fab fa-facebook-square cursor-pointer"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href='/dist/cv.pdf' target="_blank">
+                    <i class="hover:scale-105 transform text-2xl fas fa-file cursor-pointer"></i>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <div class="sm:invisible flex-col flex">
+              <p class="text-blue-900 text-2xl font-josefin font-bold">
+                Akmal Anvarov
+              </p>
+              <p class="font-josefin font-bold">Software Developer, NY, USA</p>
+            </div>
+          
+          <div
+            class="bg-gradient-to-r from-blue-200 to-pink-200 p-10 rounded-xl"
+          >
+            <p class="text-gray-900 font-mono">
+              My name is Akmal and I’m a software developer. Ever since I got my
+              first computer science book in 2014 (Code: The Hidden Language of
+              Computer Hardware and Software) I discovered that software is my
+              passion. I immigrated to the United States in 2016, all my
+              immigration process such as getting Green Card, buying flight
+              ticket was online, it made me realize how technologies can make
+              our life better. Since then I learned Javascript, Python, SQL
+              programming languages, HTML and CSS for frontend, made projects
+              and practiced full stack development using frameworks and
+              libraries like NodeJS, Flask, ReactJS etc. Using programming to
+              solve interesting problems is one of the fascinating things I
+              really enjoy. When I'm not programming I like to play Soccer,
+              jogging, biking, watch sports or read books
+            </p>
+          </div>
+        </section>
+
+      </div>
+      <div id='projects' class="flex flex-col p-4 font-josefin h-screen">
+        <div>
+          <h1 class="text-3xl text-blue-900 font-bold">Projects</h1>
+        </div>
+
+
+        <div id='todoContainer' class="h-full 
+        bg-gradient-to-r from-blue-200 to-pink-200 rounded-xl flex 
+        justify-center space-x-10 items-center
+        p-4">
+          <div class='flex flex-col justify-end pt-20 self-start items-center space-y-4 flex-grow'>
+            <h1 id='todoHeader' class='text-4xl font-bold'>Todo App</h1>
+            <h1 id='todoFeatures' class="text-3xl opacity-1">Features:</h1>
+            <ol class="space-y-3 opacity-1">
+              <li id='todoValid' class="text-2xl opacity-1">Form Validation</li>
+              <li id='todoSignUp' class="text-2xl opacity-1">User Signup/SignIn</li>
+              <li id='todoCrud' class="text-2xl opacity-1">CRUD operations</li>
+            </ol>
+            <div id='todoLinks' class='flex flex-col items-start space-y-3 opacity-1'>
+              <a href='https://master.d17sxcbidnqf13.amplifyapp.com/' target="_blank">Live Demo <i class="fas fa-play-circle"></i></a>
+              <a href='https://github.com/anvarov/todo-app' target="_blank">Source Code <i class="fab fa-github cursor-pointer"></i></a>
+            </div>
+          </div>
+          <video id='videom' loop class="m-0 rounded-lg w-3/4 lg:block hidden">
+            <source src="/dist/todo.webm" type="video/webm">
+          </video>
+          <div id='scrollIcon' class="inline absolute bottom-10 right-1/2 text-2xl text-gray-600 opacity-0"><i class="fas fa-arrow-down"></i></div>
+        </div>
+      </div>
+
+
+
+
+      <div id='skills' class="flex flex-col px-4 font-josefin">
+        <div>
+          <h1 class="text-3xl text-blue-900 font-bold">Skills</h1>
+        </div>
+        <div class=" h-full bg-gradient-to-r from-blue-200 to-pink-200 rounded-xl flex p-4 justify-start space-x-10 space-y-6 items-start flex-wrap">
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-js text-8xl"></i>
+            <p class="font-mono">JavaScript</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-node text-8xl"></i>
+            <p class="font-mono">NodeJS</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-css3 text-8xl"></i>
+            <p class="font-mono">CSS3</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-html5 text-8xl"></i>
+            <p class="font-mono">HTML5</p>
+          </div>  <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-sass text-8xl"></i>
+            <p class="font-mono">SASS</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-react text-8xl"></i>
+            <p class="font-mono">ReactJS</p>
+          </div>  <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-aws text-8xl"></i>
+            <p class="font-mono">AWS</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-docker text-8xl"></i>
+            <p class="font-mono">Docker</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-python text-8xl"></i>
+            <p class="font-mono">Python</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fas fa-database text-8xl"></i>
+            <p class="font-mono">SQL</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-git text-8xl"></i>
+            <p class="font-mono">Git</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fab fa-linux text-8xl"></i>
+            <p class="font-mono">Linux</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <i class="fas fa-terminal text-8xl"></i>
+            <p class="font-mono">Bash</p>
+          </div>
+          <div class="flex self-end h-10">
+            <p id='msg' class="text-2xl self-end block font-mono opacity-0">and more...</p>
+          </div>
+        </div>
+      </div>
+      <div id='contact' class="flex flex-col px-4 font-josefin">
+        <div>
+          <h1 class="text-3xl text-blue-900 font-bold">Contact</h1>
+        </div>
+        <div class="h-auto
+        bg-gradient-to-r from-blue-200 to-pink-200 rounded-xl flex 
+        justify-center space-x-10 items-center mb-5
+        p-4">
+          <div class="flex flex-col p-4">
+            <p>Send me a message</p>
+            <form class="flex flex-col space-y-4">
+              <input placeholder="Name"/>
+              <input placeholder="Phone" type="number" />
+              <input placeholder="Email" type="email" />
+              <textarea placeholder="Message"></textarea>
+              <button class="p-2 rounded-xl bg-blue-600 text-gray-300">Send</button>
+            </form>
+          </div>
+          <div>
+            <p>Email: <a href="mailto:akmalanvaroff@gmail.com">akmalanvaroff@gmail.com</a></address></p>
+            <p>Phone: <a href="tel:5122106689">512-210-6689</a></address></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/dist/bundle.js"></script>
+</html>
